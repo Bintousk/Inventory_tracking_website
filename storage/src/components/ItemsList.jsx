@@ -17,9 +17,10 @@ const ItemsList = () => {
       <CsvDownload data={items} />
       <table>
         <tr>
-    <th>Company</th>
-    <th>Contact</th>
-    <th>Country</th>
+    <th>Items</th>
+    <th>Description</th>
+    <th>Quantity</th>
+    <th>Price</th>
     <th>Date</th>
     <th>Action</th>
      </tr>

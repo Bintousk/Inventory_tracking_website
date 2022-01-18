@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Card } from 'react-bootstrap';
+import { Button} from 'react-bootstrap';
 import { useHistory } from 'react-router-dom';
 
 const Item = ({
@@ -15,6 +15,7 @@ const Item = ({
 
   return (
       <>
+      <th>{itemname}</th>
       <th>{author}</th>
       <th>{quantity}</th>
       <th>{price}</th>

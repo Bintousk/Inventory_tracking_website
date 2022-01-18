@@ -1,9 +1,9 @@
 body {
-    background: linear-gradient(180deg, #ffffff 0%, #f3f3f3 51%, #e0f4fc 75%);
+    background: linear-gradient(180deg, #ffffff 0%, #f0f0f0 51%, #dddddd 75%);
     font-family: Noto Sans, Helvetica, sans-serif;
-    color: #666;
+    color: rgb(92, 89, 89);
     letter-spacing: 1px;
-    padding: 10px;
+  
     min-height: 100vh;
   }
   
@@ -51,12 +51,12 @@ body {
   
   h1,
   h2 {
-    color: #666;
+    color: rgb(95, 93, 93);
   }
   
   .main-content {
     width: 80%;
-    margin: auto auto 100px auto;
+    margin: auto;
   }
   
   .main {
@@ -69,31 +69,9 @@ body {
     margin-bottom: 50px;
   }
   
-  .book-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-  }
   
-  .book {
-    margin: 10px;
-    width: 288px;
-    overflow: hidden;
   
-    .book-title {
-      font-weight: bold;
-    }
   
-    .book-details {
-      display: flex;
-      margin-bottom: 1rem;
-  
-      & > div {
-        margin-bottom: 0.5rem;
-      }
-    }
-  }
   
   .main-form {
     color: #222222;
@@ -194,11 +172,85 @@ body {
   }
   
   td, th {
-    border: 1px solid #dddddd;
+    border: 1px solid #ffffff;
     text-align: left;
     padding: 8px;
   }
   
   tr:nth-child(even) {
-    background-color: #dddddd;
+    background-color: #ffffff;
+  }
+
+  footer {
+    // background-color: #000000;
+    position: absolute;
+    bottom: 75px;
+    width: 100%;
+    height: 2.5rem;            /* Footer height */
+  }
+
+
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
+.social-container {
+ 
+    bottom: 0;
+    // background-color: #e4e4e4;
+    width: 100%;
+    margin:auto;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .social-icons {
+    display: flex;
+    // 
+    justify-content:space-evenly;
+    width: 50%;
+    padding: 0;
+    list-style: none;
+    margin: 0;
+  }
+  .social-icons li {
+    display: inline-block;
+    margin: 0.15em;
+    position: relative;
+    font-size: 1.2em;
+  }
+  .social-icons i {
+    color: #fff;
+    position: absolute;
+    top: 21px;
+    left: 21px;
+    transition: all 265ms ease-out;
+  }
+  .social-icons a {
+    display: inline-block;
+  }
+  .social-icons a:before {
+    transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    content: " ";
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    display: block;
+    background: linear-gradient(45deg, #ffffff, #000000);
+    transition: all 265ms ease-out;
+  }
+  .social-icons a:hover:before {
+    transform: scale(0);
+    transition: all 265ms ease-in;
+  }
+  .social-icons a:hover i {
+    transform: scale(2.2);
+    -ms-transform: scale(2.2);
+    -webkit-transform: scale(2.2);
+    color: #022e57;
+    background: -webkit-linear-gradient(45deg, #ffffff, #000000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 265ms ease-in;
   }

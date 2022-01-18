@@ -3,10 +3,10 @@ import ItemForm from './ItemForm';
 import ItemsContext from '../context/ItemsContext';
 
 const AddItem = ({ history }) => {
-  const { Items, setItems } = useContext(ItemsContext);
+  const { items, setItems } = useContext(ItemsContext);
 
-  const handleOnSubmit = (Item) => {
-    setItems([Item, ...Items]);
+  const handleOnSubmit = (item) => {
+    setItems([item, ...items]);
     history.push('/');
   };
 
