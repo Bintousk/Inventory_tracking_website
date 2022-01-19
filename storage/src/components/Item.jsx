@@ -5,7 +5,7 @@ import { useHistory } from 'react-router-dom';
 const Item = ({
   id,
   itemname,
-  author,
+  description,
   price,
   quantity,
   date,
@@ -16,7 +16,7 @@ const Item = ({
   return (
       <>
       <th>{itemname}</th>
-      <th>{author}</th>
+      <th>{description}</th>
       <th>{quantity}</th>
       <th>{price}</th>
       <th>{new Date(date).toDateString()}</th>

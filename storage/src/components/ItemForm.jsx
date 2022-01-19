@@ -6,7 +6,7 @@ const ItemForm = (props) => {
   const [item, setItem] = useState(() => {
     return {
       itemname: props.item ? props.item.itemname : '',
-      author: props.item ? props.item.author : '',
+      description: props.item ? props.item.description : '',
       quantity: props.item ? props.item.quantity : '',
       price: props.item ? props.item.price : '',
       date: props.item ? props.item.date : ''
@@ -14,11 +14,11 @@ const ItemForm = (props) => {
   });
 
   const [errorMsg, setErrorMsg] = useState('');
-  const { itemname, author, price, quantity } = item;
+  const { itemname, description, price, quantity } = item;
 
   const handleOnSubmit = (event) => {
     event.preventDefault();
-    const values = [itemname, author, price, quantity];
+    const values = [itemname, description, price, quantity];
     let errorMsg = '';
 
     const allFieldsFilled = values.every((field) => {
@@ -30,7 +30,7 @@ const ItemForm = (props) => {
       const item = {
         id: uuidv4(),
         itemname,
-        author,
+        description,
         price,
         quantity,
         date: new Date()
@@ -84,14 +84,14 @@ const ItemForm = (props) => {
             onChange={handleInputChange}
           />
         </Form.Group>
-        <Form.Group controlId="author">
-          <Form.Label>Item Author</Form.Label>
+        <Form.Group controlId="description">
+          <Form.Label>Item description</Form.Label>
           <Form.Control
             className="input-control"
             type="text"
-            name="author"
-            value={author}
-            placeholder="Enter name of author"
+            name="description"
+            value={description}
+            placeholder="Enter name of description"
             onChange={handleInputChange}
           />
         </Form.Group>

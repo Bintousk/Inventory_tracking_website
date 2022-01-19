@@ -6,12 +6,12 @@ const Footer = () => {
         <footer>
          <hr/>
         <div className="social-container">
-            <ul className="social-icons">
+            <div className="social-icons">
                 
-                <li><a href="https://www.google.com"><i className="fa fa-github"></i></a></li>
-                <li><a href="https://www.google.com"><i className="fa fa-linkedin"></i></a></li>
+                <div><a href="https://github.com/Bintousk/Shopify-Backend-Developer-Intern-Challenge.git"><i className="fa fa-github"></i></a></div>
+                <div><a href="https://www.linkedin.com/in/kaboungala-bintou-s-00124a1b5"><i className="fa fa-linkedin"></i></a></div>
                 
-            </ul>
+            </div>
         </div>
     </footer>
     );
