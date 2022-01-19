@@ -4,7 +4,6 @@ const Footer = () => {
     return (
        
         <footer>
-         <hr/>
         <div className="social-container">
             <div className="social-icons">
                 

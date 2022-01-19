@@ -80,7 +80,7 @@ const ItemForm = (props) => {
             type="text"
             name="itemname"
             value={itemname}
-            placeholder="Enter name of item"
+            placeholder="Enter name of the item"
             onChange={handleInputChange}
           />
         </Form.Group>
@@ -91,7 +91,7 @@ const ItemForm = (props) => {
             type="text"
             name="description"
             value={description}
-            placeholder="Enter name of description"
+            placeholder="Enter the description"
             onChange={handleInputChange}
           />
         </Form.Group>

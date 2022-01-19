@@ -21,8 +21,8 @@ const ItemsList = () => {
     <th>Items</th>
     <th>Description</th>
     <th>Quantity</th>
-    <th>Price</th>
-    <th>Date</th>
+    <th>Price ($)</th>
+    <th>Date of the last uptade</th>
     <th>Action</th>
      </tr>
         </thead>
