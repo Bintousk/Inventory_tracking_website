@@ -1,8 +1,7 @@
-# The project is in the floder storage`.
+# The project is in the floder `storage`.
 # Shopify-Backend-Developer-Intern-Challenge
 TASK: Build an inventory tracking web application for a logistics company. We are looking for a web application that meets the requirements listed below, along with one additional feature, with the options also listed below. 
 The chosen feature is : Push a button export product data to a CSV
-
 
 
 
