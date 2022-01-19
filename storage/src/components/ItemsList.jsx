@@ -16,6 +16,7 @@ const ItemsList = () => {
       <div className="item-list">
       <CsvDownload data={items} />
       <table>
+        <thead>
         <tr>
     <th>Items</th>
     <th>Description</th>
@@ -24,6 +25,9 @@ const ItemsList = () => {
     <th>Date</th>
     <th>Action</th>
      </tr>
+        </thead>
+        <tbody>
+        
         {!_.isEmpty(items) ? ( 
           items.map((item) => (
             <tr><Item key={item.id} {...item} handleRemoveItem={handleRemoveItem} /></tr>
@@ -31,6 +35,7 @@ const ItemsList = () => {
         ) : (
           <p className="message">No items available. Please add some items.</p>
         )}
+        </tbody>
       </table>
       </div>
     </React.Fragment>
